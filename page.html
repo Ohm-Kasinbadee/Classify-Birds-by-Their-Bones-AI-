@@ -1,87 +1,362 @@
-    <!DOCTYPE HTML>
-    <html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <title>Classification of birds</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a responsive Contact Form available in multiple colors">
-    <meta name="author" content="">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/contact.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Classification of birds</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is a responsive Contact Form available in multiple colors">
+  <meta name="author" content="">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/contact.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-            
-            /* Create three equal columns that floats next to each other */
-            .column {
-                float: left;
-                width: 33.33%;
-                padding: 10px;
-                height: 300px; /* Should be removed. Only for demonstration */
-            }
-            
-            /* Clear floats after the columns */
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-            </style>
-    </head>
-    <body>
-    <!--Contact form start-->
-    <div align="center">
-        <div class="row">
-          <div class="column">
-              <section id="contact">
-                  <img src="Documentation\assets\css\img\bird.jpg"  width="400" height="250" border="1">
-              </section>
-          </div>
-          <div class="column">
-              <section id="contact">
-                  <h1>Classify Birds by Their Bones</h1>
-                  <h3>Fill out the form below for each section of bones.</h3>
-                        <form action="#" method="post" class="cform-form">
-                          <div align="left">
-                            <p align="left"> 1.) huml - Length of Humerus</p>
-                              <p><input type="text" name="huml" placeholder="กรอกความยาวของกระดูกต้นแขน" class="cform-text" > mm.</p>
-                            <p align="left"> 2.) humw - Diameter of Humerus</p>
-                              <p><input type="text" name="humw" placeholder="กรอกเส้นผ่าศูนย์กลางของกระดูกต้นแขน" class="cform-text"  > mm.</p>
-                            <p align="left"> 3.) ulnal - Length of Ulna</p>
-                              <p><input type="text" name="ulnal" placeholder="กรอกความยาวของกระดูกปลายแขนท่อนใน" class="cform-text"  > mm.</p>
-                            <p align="left"> 4.) ulnaw - Diameter of Ulna</p>
-                              <p><input type="text" name="ulnaw" placeholder="กรอกเส้นผ่าศูนย์กลางของกระดูกปลายแขนท่อนใน*" class="cform-text" > mm.</p>
-                            <p align="left"> 5.) feml - Length of Femur</p>
-                              <p><input type="text" name="feml" placeholder="กรอกความยาวของกระดูกต้นขา" class="cform-text"  > mm.</p>
-                            <p align="left"> 6.) femw - Diameter of Femur</p>
-                              <p><input type="text" name="femw" placeholder="กรอกเส้นผ่าศูนย์กลางของกระดูกต้นขา" class="cform-text" > mm.</p>
-                            <p align="left"> 7.) tibl - Length of Tibiotarsus</p>
-                              <p><input type="text" name="tibl" placeholder="กรอกความยาวของกระดูกกลางขา" class="cform-text" > mm.</p>
-                            <p align="left"> 8.) tibw - Diameter of Tibiotarsus </p>
-                              <p><input type="text" name="tibw" placeholder="กรอกเส้นผ่าศูนย์กลางของกระดูกกลางขา" class="cform-text" > mm.</p>
-                            <p align="left"> 9.) tarl - Length of Tarsometatarsus</p>
-                              <p><input type="text" name="tarl" placeholder="กรอกความยาวของกระดูกปลายขา" class="cform-text"  > mm.</p>
-                            <p align="left"> 10.) tarw - Diameter of Tarsometatarsus</p>
-                              <p><input type="text" name="tarw" placeholder="กรอกเส้นผ่าศูนย์กลางของกระดูกปลายขา" class="cform-text"  > mm.</p>
-                            <p><input type="submit" value="Submit"></p>
-                          </div>
-                        </form>
-              </section>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+      height: 300px;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <!--Contact form start-->
+  <div align="center">
+    <div class="row">
+      <div class="column">
+        <section id="contact">
+          <img src="css\img\bird.jpg" / width="100%">
+        </section>
+      </div>
+      <div class="column">
+        <section id="contact">
+          <h1>Classify Birds by Their Bones</h1>
+          <h3>Fill out the form below for each section of bones.</h3>
+          <form action="#" method="post" class="cform-form">
+            <div align="left">
+              <p align="left"> 1.) huml - Length of Humerus</p>
+              <div align="center">
+                <p>
+                  <input type="text" id="huml" placeholder="กรอกความยาวของกระดูกต้นแขน" class="cform-text"> mm.</p>
+              </div>
+
+              <p align="left"> 2.) humw - Diameter of Humerus</p>
+              <div align="center">
+                <p>
+                  <input type="text" id="humw" placeholder="กรอกเส้นผ่าศูนย์กลางของกระดูกต้นแขน" class="cform-text"> mm.</p>
+              </div>
+
+              <p align="left"> 3.) ulnal - Length of Ulna</p>
+              <div align="center">
+                <p>
+                  <input type="text" id="ulnal" placeholder="กรอกความยาวของกระดูกปลายแขนท่อนใน" class="cform-text"> mm.</p>
+              </div>
+
+              <p align="left"> 4.) ulnaw - Diameter of Ulna</p>
+              <div align="center">
+                <p>
+                  <input type="text" id="ulnaw" placeholder="กรอกเส้นผ่าศูนย์กลางของกระดูกปลายแขนท่อนใน*" class="cform-text"> mm.</p>
+              </div>
+
+              <p align="left"> 5.) feml - Length of Femur</p>
+              <div align="center">
+                <p>
+                  <input type="text" id="feml" placeholder="กรอกความยาวของกระดูกต้นขา" class="cform-text"> mm.</p>
+              </div>
+
+              <p align="left"> 6.) femw - Diameter of Femur</p>
+              <div align="center">
+                <p>
+                  <input type="text" id="femw" placeholder="กรอกเส้นผ่าศูนย์กลางของกระดูกต้นขา" class="cform-text"> mm.</p>
+              </div>
+
+              <p align="left"> 7.) tibl - Length of Tibiotarsus</p>
+              <div align="center">
+                <p>
+                  <input type="text" id="tibl" placeholder="กรอกความยาวของกระดูกกลางขา" class="cform-text"> mm.</p>
+              </div>
+
+              <p align="left"> 8.) tibw - Diameter of Tibiotarsus </p>
+              <div align="center">
+                <p>
+                  <input type="text" id="tibw" placeholder="กรอกเส้นผ่าศูนย์กลางของกระดูกกลางขา" class="cform-text"> mm.</p>
+              </div>
+
+              <p align="left"> 9.) tarl - Length of Tarsometatarsus</p>
+              <div align="center">
+                <p>
+                  <input type="text" id="tarl" placeholder="กรอกความยาวของกระดูกปลายขา" class="cform-text"> mm.</p>
+              </div>
+
+              <p align="left"> 10.) tarw - Diameter of Tarsometatarsus</p>
+              <div align="center">
+                <p>
+                  <input type="text" id="tarw" placeholder="กรอกเส้นผ่าศูนย์กลางของกระดูกปลายขา" class="cform-text"> mm.</p>
+              </div>
+
             </div>
-            <div class="column">
-                <section id="contact">
-                   <p>  Hello</p>
-                </section>
-            </div>
-        </div>
-   
+            <button onclick="myFunctiotree()" type="submit">Submit</button>
+          </form>
+        </section>
+      </div>
+      <div class="column">
+        <section id="contact">
+          <p> Hello</p>
+        </section>
+      </div>
+    </div>
   </div>
   <!--Contact form end-->
+  <!-- Java Script Functiontree -->
+  <script>
+    function myFunctiontree() {
+      var hour = new Date().getHours();
+      var greeting;
+      if(huml <= 32.31){
+       if(tarw <= 2){
+         if(humw <= 2.54){
+           if(tarl <= 15.8){
+             if(huml <= 15.99){
+              //  SO(2.0)
+             }
+             else{
+              //  P(4.0/1.0)
+             }
+           }
+           else{
+             if(feml <= 31.17){
+               if(huml <= 22.35){
+                //  SO(73.0)
+               }
+               else{
+                if(feml <= 19.56){
+                  if(feml <= 14.07){
+                    // SW(2.0)
+                  }
+                  else{
+                    // W(7.0/1.0)
+                  }
+                }
+                else{
+                  if(feml <= 22.08){
+                    if(tibl <= 36.52){
+                      // SO(8.0)
+                    }
+                    else{
+                      // SW(3.0/1.0)
+                    }
+                  }
+                  else{
+                    // SO(31.0)
+                  }
+                }
+               }
+             }
+             else{
+               if(humw <= 22.08){
+                // W(2.0/1.0)  
+               }
+               else{
+                //  P(2.0)
+               }
+             }
+           }
+         }
+         else{
+           if(tibw <= 1.94){
+            // P(13.0)  
+           }
+           else{
+            //  SO(5.0)
+           }
+         }
+       }
+       else {
+         if(tarl <= 31.88){
+          //  T(7.0)
+         }
+         else{
+          //  SW(3.0/1.0)
+         }
+       }
+      } else{
+        if (huml <= 49.12){
+          if(tarw <= 2.2){
+            if(ulnal <= 40){
+              if(feml <= 19.05){
+                // SW(4.0)
+              }
+              else{
+                // W(14.0/2.0)
+              }
+            }
+            else{
+              if(humw <= 2.7){
+                // SW(2.0/1.0)
+              }
+              else{
+                // P(13.0)
+              }
+            }
+          }
+          else{
+            if(femw <= 3.78){
+              if(tarl <= 40.43){
+                if(femw <= 2.57){
+                  // R(6.0/1.0)
+                }
+                else{
+                  if(tarw <= 2.29){
+                    // R(4.0/1.0)
+                  }
+                  else{
+                    if(ulnal <= 52.76){
+                      // T(9.0)
+                    }
+                    else{
+                      if(huml <= 46.2){
+                        // P(2.0)
+                      }
+                      else{
+                        // T(2.0/1.0)
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            else{
+              if(humw <= 5.28){
+                // P(5.0)
+              }
+              else{
+                // SW(3.0)
+              }
+            }
+          }
+        }
+        else{
+          if(feml <= 52.98){
+            if(tibw <= 4.36){
+              if(huml <= 61.6){
+                if(humw <= 2.54){
+                  if(huml <= 50.96){
+                    // W(2.0)
+                  }
+                  else{
+                    // SW(2.0)
+                  }
+                }
+                else{
+                  // R(5.0)
+                }
+              }
+              else{
+                if(tarl <= 53.83){
+                  if(feml <= 33.01){
+                    if(tibl <= 48.82){
+                      // W(2.0)
+                    }
+                    else{
+                      // SW(23.01/1.0)
+                    }
+                  }
+                  else{
+                    if(tarw <= 2.72){
+                      // W(12.0/1.0)
+                    }
+                    else{
+                      if(feml <= 45.08){
+                        // SW(21.0)
+                      }
+                      else{
+                        if(femw <= 3.9){
+                          // W(3.9)
+                        }
+                        else{
+                          // SW(4.0/1.00)
+                        }
+                      }
+                    }
+                  }
+                }
+                else{
+                  // W(8.0)
+                }
+              }
+            }
+            else{
+              // SW(28.0)
+            }
+          }
+          else{
+            if(huml <= 145){
+              if(humw <= 10.37){
+                if(femw <= 5.45){
+                  if(huml <= 100.69){
+                    if(femw <= 4.16){
+                      // W(3.0)
+                    }
+                   else{
+                    //  R(13.0)
+                   }
+                    }
+                  else{
+                    if(huml <= 118.2){
+                      // SW(2.0)
+                    }
+                    else{
+                      // W(7.0)
+                    }
+                  }
+                }
+                else{
+                  if(feml <= 64.8){
+                    // SW(2.0/1.0)
+                  }
+                  else{
+                    // R(24.0/1.0)
+                  }
+                }
+              }
+              else{
+                if(feml <= 91.6){
+                  // SW(3.0)
+                }
+                else{
+                  // T(2.0)
+                }
+              }
+            }
+            else{
+              if(tarl <= 134){
+                // SW(17.0/1.0)
+              }
+              else{
+                // W(2.0)
+              }
+            }
+          }
+        }
+      }
+      // document.getElementById("#").innerHTML = greeting;
+    }
+  </script>
 </body>
+
 </html>

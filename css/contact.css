@@ -45,7 +45,7 @@ select {
 	-webkit-transition: background 0.25 ease-in;
 }
 
-input[type=submit] {
+button[type=submit] {
 	font-family: 'Patua One', cursive;
 	color: #fff;
 	width: 185px;
