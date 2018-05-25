@@ -2,17 +2,19 @@ section#contact {
 	color: rgb(70, 70, 70);
 	background:#fafafa;
 	display:block;
-	width:512px;
+	width:100%;
 	padding:0px;
 	border: solid 1px #f1f1f1;
 	font-family: 'Patua One', sans serif;
 }
 
 #contact p{font-size: 18px;}
-
+span{
+	font-size: 18px;	
+}
  .cform-text {width: 400px;}
 
- #contact input[type=text], select {
+ #contact input[type=number], select {
 	height: 3.25em;
 }
 
@@ -25,7 +27,7 @@ select {
 	vertical-align: middle;
 }
 
-#contact input[type=text], textarea {
+#contact input[type=number], textarea {
 	background: #f1f1f1;
 	font-family: 'Patua One', sans serif;
 	border: 0;
@@ -34,7 +36,7 @@ select {
 	text-align: left;
 	vertical-align: middle;
 }
-#contact input[type=text]:focus, textarea:focus, select:focus {
+#contact input[type=number]:focus, textarea:focus, select:focus {
 	background: #e5e5e5;
 	font-family: 'Patua One', sans serif;
 	box-shadow: none;
@@ -45,7 +47,7 @@ select {
 	-webkit-transition: background 0.25 ease-in;
 }
 
-button[type=submit] {
+.btn-submit {
 	font-family: 'Patua One', cursive;
 	color: #fff;
 	width: 185px;
@@ -56,6 +58,7 @@ button[type=submit] {
 	letter-spacing: 0.05em;
 	margin: 0 0 20px 0;
 	display: block;
+	align-items: center;
 	border: 0;
 	text-transform: none;
 	background: #1abc9c !important;
